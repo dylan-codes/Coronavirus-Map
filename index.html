@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19 Tracker</title>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
+    <!-- Included CSS style. Sets the MapBox size to the size of the vewport/screen. -->
+    <style>
+      #map {
+        width: 100vw;
+        height: 100vh;
+      }
+      * {
+        margin:0;
+      }
+      #marker {
+        color: white;
+        position:absolute;
+      }
+    </style>
+  </head>
+
+  <!-- Initializes Mapbox & Javascript -->
+  <body>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js'></script>
+    <script type="module" src="main.js"></script>
+    <div id='map'></div>
+  </body>
+</html>
